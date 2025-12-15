@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Poojaprakash — Aspiring Full‑Stack Developer</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{ --accent:#6f42c1; --bg:#0f1724; --card:#0b1220; }
+    body{ font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, 'Helvetica Neue', Arial; background:#d8ffd8; color:#000000; }
+    header{ padding:1.25rem 0; }
+    .brand{ font-weight:700; letter-spacing:0.3px; }
+    .hero{ padding:4rem 0; }
+    .card-soft{ background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.04); border-radius:14px; }
+    .skill-badge{ background:rgba(255,255,255,0.03); padding:.35rem .6rem; border-radius:999px; margin:.25rem; display:inline-block; }
+    .lang-list li{ margin-bottom:.25rem; }
+    .project { margin-bottom:1.25rem; }
+    footer{ padding:2rem 0; color:#cbd5e1; }
+    .nav-link{ color:#000000 !important; }
+    .toggle-theme{ cursor:pointer; }
+    @media(min-width:992px){ .hero-row{ align-items:center; } }
+  </style>
+</head>
+<body>
+    
+  <div class="container">
+    <header class="d-flex justify-content-between align-items-center">
+      <div class="brand d-flex align-items-center gap-3">
+        <img src="https://via.placeholder.com/56" alt="Pooja" class="rounded-circle" width="56" height="56">
+        <div>
+          <div style="font-size:1.05rem">Pooja P</div>
+          <div style="font-size:.8rem; color:#000000">Aspiring Full‑Stack Developer</div>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero row hero-row">
+        <div class="col-lg-7">
+          <h1 style="font-size:2rem; margin-bottom:.5rem">Hi I'm <span style="color:var(--accent)">Pooja P</span></h1>
+          <br>
+           <image src="./images/pooja.jpg" width=300px height=250px alt="Pooja P" />
+           <br><br>
+          <p class="lead" style="color:#000000">Aspiring Full‑Stack Developer from Electrical & Electronics Engineering (Pre‑final year). I build IoT systems, accessible devices and practical automation solutions combining hardware, firmware and cloud-backed apps.</p>
+
+          <div class="mt-3 d-flex gap-2">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-outline-light" href="mailto:youremail@example.com" style="background-color: blue;">Contact</a>
+          </div>
+
+          <div class="mt-4 card-soft p-3" style="max-width:520px;">
+            <strong>Role</strong>
+            <div>Aspiring Full‑Stack Developer • Pre‑final year (EEE)</div>
+            <div class="mt-2"><strong>Languages</strong>
+              <ul class="lang-list" style="margin:0; padding-left:1rem">
+                <li>Tamil — Native</li>
+                <li>English — Proficient</li>
+                <li>German — Basic</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 text-center">
+          <img src="https://via.placeholder.com/360x300" alt="Hero" class="img-fluid rounded card-soft p-2 mt-3">
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="mt-5">
+        <h2>About Me</h2>
+        <div class="row mt-3">
+          <div class="col-md-7">
+            <div class="card-soft p-3">
+              <p>I studied Electrical and Electronics Engineering and I am currently in my pre‑final year. My interests sit at the intersection of embedded systems, machine learning and web development. I enjoy building end-to-end solutions — from sensor + firmware to backend APIs and a polished frontend.</p>
+              <p>Notable focus areas: IoT, accessibility devices, automation, and web applications using Spring Boot, React (or vanilla JS) and Bootstrap.</p>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="card-soft p-3">
+              <h6>Quick facts</h6>
+              <ul>
+                <li>Degree: B.E. — Electrical & Electronics Engineering</li>
+                <li>Year: Pre‑final year</li>
+                <li>Primary stack: HTML, CSS, Bootstrap, Java, Spring Boot, Python, C</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="mt-5">
+        <h2>Skills</h2>
+        <div class="mt-3 card-soft p-3">
+          <div class="d-flex flex-wrap">
+            <span class="skill-badge">HTML</span>
+            <span class="skill-badge">CSS</span>
+            <span class="skill-badge">Bootstrap</span>
+            <span class="skill-badge">Java</span>
+            <span class="skill-badge">Spring Boot</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">C</span>
+            <span class="skill-badge">IoT</span>
+            <span class="skill-badge">Deep Learning</span>
+            <span class="skill-badge">Embedded Systems</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="mt-5">
+        <h2>Projects</h2>
+
+        <div class="mt-3 project card-soft p-3">
+          <h5>IoT-based Smart Irrigation using Deep Learning Model</h5>
+          <p>Designed an intelligent irrigation system using soil/moisture sensors, weather data and a lightweight deep learning model to predict irrigation needs. The system controls valves through a microcontroller and reports telemetry to a cloud dashboard. Tech: Arduino/ESP32, Python (model), MQTT, Flask backend.</p>
+          <p><strong>Highlights:</strong> Reduced water usage by automating schedules, model-based decision making, remote monitoring.</p>
+        </div>
+
+        <div class="mt-3 project card-soft p-3">
+          <h5>Smart Pen for Disabled Persons</h5>
+          <p>Developed an accessible pen device for users with visual/hearing impairments. It includes tactile feedback, handwriting capture, and audio output. The device bridges mechanical and electronic features to provide improved usability for special-needs learners. Tech: Embedded C, accelerometer sensor fusion, basic NLP for text-to-speech.</p>
+          <p><strong>Highlights:</strong> Accessibility-first design, hardware prototypes, user testing with sample users.</p>
+        </div>
+
+        <div class="mt-3 project card-soft p-3">
+          <h5>Home Automation using DC Power Supply</h5>
+          <p>Implemented a home automation prototype controlled over Wi-Fi that runs on a DC power supply setup. Includes relay-based switching for lights and fans, and a web UI for manual/automatic control. Tech: ESP8266/ESP32, Node/Flask backend, Bootstrap UI.</p>
+          <p><strong>Highlights:</strong> Energy-efficient DC design, remote control and scheduling.</p>
+        </div>
+
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="mt-5 mb-5">
+        <h2>Contact</h2>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <div class="card-soft p-3">
+              <form onsubmit="alert('This is a demo form. Replace the handler with your backend or mailto.'); return false;">
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input class="form-control" placeholder="Your name" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" placeholder="you@example.com" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-control" rows="4" placeholder="Hi Pooja..." required></textarea>
+                </div>
+                <button class="btn btn-primary">Send</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card-soft p-3">
+              <h6>Quick links</h6>
+              <ul>
+                <li>Resume: <a href="file:///C:/Users/hppoo/Downloads/my%20new%20resume.pdf">Resume</a></li>
+                <li>GitHub: <a href="https://github.com/Poojaprakash2">GitHub</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/pooja-prakash-900a17291">LinkedIn</a></li>
+              </ul>
+
+              <h6 class="mt-3">How to reach</h6>
+              <p>Email: <a href="kit27.eee040@gmail.com">mail to</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="text-center mt-4">
+      <small>© <span id="year"></span> Poojaprakash — Aspiring Full‑Stack Developer</small>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const hash = a.getAttribute('href');
+        if(hash.length>1){
+          e.preventDefault();
+          document.querySelector(hash).scrollIntoView({behavior:'smooth'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
